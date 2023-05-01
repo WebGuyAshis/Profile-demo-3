@@ -1,0 +1,532 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+#nav-header{
+    height: 45vh;
+    background-image: url(https://images.pexels.com/photos/1209435/pexels-photo-1209435.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.horizontal-list{
+    list-style: none;
+    text-align: center;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    padding: 3px;
+    margin: 5px;
+}
+.horizontal-list a{
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.horizontal-list a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+    /* font-size: 19px; */
+}
+/* -----------------------------------------Name--------------------------------------- */
+.name-container{
+    /* height: 60vh; */
+    text-align: center;
+}
+#name{
+    color: rgb(254, 254, 254);
+    margin-top: 10vh;
+    font-size: 2.2rem;
+}
+
+/* ---------------------------------Social Links----------------------------------- */
+.social-icons li a i{
+    border-radius:50%;
+    padding: 2px;
+    transition: 0.2s;
+    font-size: 1.5rem;
+
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(235, 239, 235, 0.3);
+    transition: 0.2s;
+}
+/* --------------------Main----------------------- */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 18rem;
+    width: 18rem;
+    text-align: center;
+    margin: auto;
+    margin-top: -20vh;
+    transition: 0.5s;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 4px rgb(213, 210, 217);
+}
+#about-me{
+    padding-top: 2rem;
+    margin: 2rem;
+    text-align: justify;
+}
+/* ____________SKILLS SECTION____________ */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(even){
+    background-color: rgb(206, 236, 246);
+}
+.section-heading{
+    /* text-align: center; */
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right:0.5rem;
+}
+.skills-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+}
+.skill-progress-container{
+    border:1px solid black;
+    min-width:16rem;
+    max-width: 25rem;
+    height: 3rem;
+    background-color: lightgrey;
+    border-radius: 1.5rem;
+    margin-bottom: 65px;
+    overflow:  hidden;
+}
+.skill-progress-container>div{
+    height: inherit;
+    background-color: #2857a4;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+.skill-text{
+    position: relative;
+    top:14px;
+    left: 10px;
+    /* border: 2px solid red; */
+    color: rgb(255, 255, 255);
+}
+/* _______________PERCENTAGE COLOR________________________ */
+#eigthy-five-percent{
+    height: inherit;
+    width: 85%;
+    background-color: rgb(132, 213, 86);
+}
+#ninety-percent{
+    height: inherit;
+    width: 90%;
+    background-color: rgb(213, 188, 86);
+
+}
+#eighty-seven-percent{
+    height: inherit;
+    width: 87%;
+    background-color: rgb(156, 86, 213);
+
+}
+#seventy-eigth-percent{
+    height: inherit;
+    width: 78%;
+    background-color: rgb(86, 111, 213);
+}
+#sixty-five-percent{
+    height: inherit;
+    width:65%;
+    background-color: rgb(132, 27, 154);
+}
+#eighty-percent{
+    height: inherit;
+    width: 80%;
+    background-color: rgb(213, 154, 86);
+}
+
+/* ---------------------------Work Experience-------------------- */
+
+.experience-container{
+    position: relative;
+    /* border: 2px solid black; */
+    width: 75%;
+}
+
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    text-align: justify;
+    transition: 0.5s;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 47%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: red;
+    z-index: 1;
+
+}
+
+
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: -10.5%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: red;
+    z-index: 1;
+}
+
+.timeline-divider {
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------Education---------------------- */
+.education-container{
+    position: relative;
+    /* border: 2px solid black; */
+    width: 75%;
+}
+
+.education-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    text-align: justify;
+    transition: 0.5s;
+}
+.education-box:nth-child(even){
+    left: 53.5%;
+    transition: 0.5s;
+}
+
+.education-box:nth-child(odd):after{
+    content: '';
+    position: absolute;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: red;
+    top: 30%;
+    right: -14%;
+    z-index: 1;
+}
+.education-box:nth-child(even):after{
+    content: '';
+    position: absolute;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: red;
+    top: 30%;
+    left: -11.5%;
+    z-index: 1;
+}
+.education-divider{
+    position: absolute;
+    height: 65%;
+    width: 0;
+    top: 11%;
+    left: 50%;
+    border: 2.5px solid rgb(193, 192, 192);
+}
+.education-traveller{
+    position: sticky;
+    transform: rotate(90deg);
+    top: 30%;
+    z-index: 2;
+}
+
+/* -------------------------------------------------------------- */
+/*____________________Portfolio_______________________ */
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin: 1rem;
+}
+.projects-container div{
+    /* border: 2px solid red; */
+    margin: 20px auto;
+    box-sizing: border-box;
+    height: 40vh;
+}
+ .project-img{
+    height: 40vh;
+    /* border: 2px solid yellow; */
+}
+.hover-text{ 
+    /* display: inline-block; */
+    position: relative;
+    top:-200px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 40px;
+    /* border: 2px solid red; */
+}
+.hover-effect:hover{
+    /* border: 0.1px solid red; */
+    border-radius: 2px;
+    box-shadow: 0 0 2px 4px rgb(161, 194, 235);
+    transition:0.2s;
+    background-color: rgb(50, 48, 48);
+    opacity: 0.5;
+}
+.hover-effect:hover .hide{
+    display: block;
+    transition: 0.2s;
+    color: white;
+}
+
+
+.hide{
+    display: none;
+}
+
+/* _________________________CONTACTS___________________________ */
+
+.gradient-background{
+    background: linear-gradient(#2857a4,#403066);
+}
+.contacts span{
+    color: white;;
+}
+.contacts-container{
+    display: flex;
+}
+.contacts-container input,textarea{
+    height: 60px;
+    font-size: 25px;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    /* border: 2px solid red; */
+    margin: 20px;
+    transition: 0.5s;
+
+    
+}
+.names button{
+    display: inline-block;
+    height: 50px;
+    width: 140px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    margin: auto;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.address{
+    /* border: 2px solid yellow; */
+    width: 40vw;
+    margin: 20px;
+    transition: 0.5s;
+
+}
+
+.address h2{
+    color: white;
+    margin-bottom: 20px;
+}
+/* --------------------------------------------------- */
+.mb20{
+    margin-bottom: 20px;
+}
+.background-transparent{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid white;
+    box-shadow: none;
+    outline: none;
+}
+.cwhite{
+    color: white;
+}
+/* ____________________________________________________ */
+
+
+/* ---------------------Media Queries--------------------- */
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 16px;
+    }
+    .section-heading span{
+        font-size: 2.4rem ;
+    }
+    #my-image{
+        height: 12rem;
+        width: 12rem;
+        margin-top: -13vh;
+        transition: 0.5s;
+    }
+
+    .timeline-box {
+        left: 12% !important;
+        width: 80%;
+        transition: 0.5s;
+    }
+
+    .timeline-divider{
+        left: 5%;
+    }
+
+    .timeline-box::after{
+        left: -10.5%;
+    }
+    .education-box{
+        left: 12% !important;
+        width: 80%;
+        transition: 0.5s;
+    }
+    .education-divider{
+        left: 5%;
+    }
+
+    .education-box::after{
+        left: -11%;
+    }
+    .contacts-container{
+        display: block;
+    }
+    .names{
+        width: 90vw;
+        margin: auto;
+        transition: 0.5s;
+        margin-bottom: 10px;
+    }
+    .address{
+        width: 90vw;
+        margin: auto;
+        transition: 0.5s ease-out;
+    }
+}
+
+@media screen and (max-width:600px){
+    html{
+        font-size: 13px;
+    }
+    .section-heading span{
+        font-size: 2.2rem ;
+    }
+    #nav-header{
+        height: 40vh;
+    }
+    #name{
+        margin-top: 2vh;
+        font-size: 2rem;
+    }
+
+    .social-icons li a i{
+        font-size: 1.5rem;
+    }
+
+    #my-image{
+        height: 10rem;
+        width: 10rem;
+        margin-top: -11vh;
+        transition: 0.5s;
+    }
+
+    .timeline-box {
+        left: 12% !important;
+        width: 80%;
+        transition: 0.5s;
+    }
+
+    .timeline-divider{
+        left: 5%;
+    }
+
+    .timeline-box::after{
+        left: -10.5%;
+    }
+    .education-box{
+        left: 12% !important;
+        width: 80%;
+        transition: 0.5s;
+    }
+    .education-divider{
+        left: 5%;
+    }
+
+    .education-box::after{
+        left: -11%;
+    }
+    .contacts-container{
+        display: block;
+    }
+    .names{
+        width: 90vw;
+        margin: auto;
+        transition: 0.5s;
+        margin-bottom: 10px;
+    }
+    .address{
+        width: 90vw;
+        margin: auto;
+        transition: 0.5s ease-out;
+    }
+}
